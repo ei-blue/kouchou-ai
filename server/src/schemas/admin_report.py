@@ -28,5 +28,6 @@ class ReportInput(SchemaBaseModel):
     model: str  # 利用するLLMの名称
     workers: int  # LLM APIの並列実行数
     prompt: Prompt  # プロンプト
-    comments: list[Comment]  # コメントのリスト
+    spreadsheet_url: str  # スプレッドシートのURL
+    # comments: list[Comment]  # コメントのリスト
     inputType: Literal["file", "spreadsheet"] = "file"  # 入力タイプ

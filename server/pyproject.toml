@@ -23,6 +23,7 @@ dependencies = [
     "structlog>=25.1.0",
     "uvicorn>=0.34.0",
     "orjson>=3.10.15",
+    "python-multipart>=0.0.20",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"

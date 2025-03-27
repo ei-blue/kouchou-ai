@@ -172,6 +172,8 @@ python-dotenv==1.0.1
     # via litellm
     # via pydantic-settings
     # via server
+python-multipart==0.0.20
+    # via server
 pytz==2025.1
     # via pandas
 pyyaml==6.0.2

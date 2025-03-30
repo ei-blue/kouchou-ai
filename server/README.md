@@ -10,16 +10,17 @@ kouchou-aiのAPIサーバーです。
 
 
 ## セットアップ（開発環境）
-以下のコマンドを実行し、.envファイル内の環境変数を記載してください
+プロジェクトのルートディレクトリ（kouchou-ai/）で以下のコマンドを実行して.env.serverファイルを作成し、.env.serverファイル内の環境変数を記載してください
 ```bash
-cp .env.example .env
+cp .env.server.example .env.server
 ```
-環境変数は現状以下の2つ
+記載が必要な環境変数は現状以下の1つ。
 * OPENAI_API_KEY
   * OpenAIのAPIキー。レポート作成時に利用。
 
 
 ## 起動
+serverディレクトリで以下を実行してください。
 ```bash
 rye sync
 make run

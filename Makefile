@@ -48,7 +48,8 @@ lint/api-format:
 ##############################################################################
 
 define read-env
-$(eval include .env)
+$(eval include .env.server)
+$(eval include .env.client)
 $(eval -include .env.azure)
 $(eval AZURE_RESOURCE_GROUP ?= kouchou-ai-rg)
 $(eval AZURE_LOCATION ?= japaneast)

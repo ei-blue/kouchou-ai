@@ -1,4 +1,6 @@
 .env
+.env.server
+.env.client
 .idea
 .next
 .DS_Store

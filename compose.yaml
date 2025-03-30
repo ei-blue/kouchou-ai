@@ -10,7 +10,7 @@ services:
     environment:
       - LOG_LEVEL=debug
     env_file:
-      - .env
+      - .env.server
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000"]
@@ -35,7 +35,7 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - .env
+      - .env.client
     restart: unless-stopped
     networks:
       - app-network
@@ -53,7 +53,7 @@ services:
     ports:
       - "4000:4000"
     env_file:
-      - .env
+      - .env.client
     restart: unless-stopped
     networks:
       - app-network

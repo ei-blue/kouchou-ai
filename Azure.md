@@ -29,10 +29,11 @@
 
 ### 1. 環境変数の設定
 
-`.env.example`をコピーして`.env`ファイルを作成し、必要な環境変数を設定します。
+`.env.example.server``.env.example.client`をコピーして`.env.server``.env.client`ファイルを作成し、必要な環境変数を設定します。
 
 ```bash
-cp .env.example .env
+cp .env.example.server .env.server
+cp .env.example.client .env.client
 ```
 
 特に以下の環境変数は重要です：

@@ -18,19 +18,15 @@ Options:
 """
 
 import json
-import os
 import sys
 import argparse
 from pathlib import Path
 import requests
 import getpass
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
+from src.config import settings
 
 # Default configuration
-API_KEY = os.environ.get("PUBLIC_API_KEY", "")
+API_KEY = settings.PUBLIC_API_KEY
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent

@@ -1,4 +1,5 @@
 .env
+.env.azure
 .env.server
 .env.client
 .idea
